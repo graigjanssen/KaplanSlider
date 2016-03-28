@@ -15,7 +15,8 @@ var books = [
       '35 practice cases with answers and explanations'
     ],
     author: '',
-    legal: 'USMLE is a registered trademark of the Federation of State Medical Boards (FSMB) of the United States, inc., and the National Board of Medical Examiners (NBME), neither of which sponsors or endorses this product.'
+    legal: 'USMLE is a registered trademark of the Federation of State Medical Boards (FSMB) of the United States, inc., and the National Board of Medical Examiners (NBME), neither of which sponsors or endorses this product.',
+    brandImage: 'images/kaplan-logo.png'
   },
   {
     title: 'USMLE',
@@ -29,34 +30,54 @@ var books = [
       'BONUS: Tearout flashcard section based upon "doorway information"'
     ],
     author: 'Phillip Brottman, MD and Sonia Reichert, MD',
-    legal: 'USMLE is a registered trademark of the Federation of State Medical Boards (FSMB) of the United States, inc., and the National Board of Medical Examiners (NBME), neither of which sponsors or endorses this product.'
+    legal: 'USMLE is a registered trademark of the Federation of State Medical Boards (FSMB) of the United States, inc., and the National Board of Medical Examiners (NBME), neither of which sponsors or endorses this product.',
+    brandImage: 'images/kaplan-logo.png'
   },
   {
     title: 'USMLE',
-    subtitle: 'WT: Wasting Time',
+    subtitle: 'Step 3: Something Else',
     edition: 'Eighth',
     tagline: 'Proven, practical tools to help you score higher',
     features: [
-      'Examples of how to waste your valuable time',
-      'Complex cases involving extreme wastes of time',
-      '40 sample situations that explain secrets of time-wasting',
-      'Real-life scenarios that give you the tools to waste the most time possible'
+      'Example problems taken from real life tests',
+      'Helpful diagrams to assist in preparation',
+      '40 full color images with explanations',
+      'Sample question and answer sessions with detailed explanations'
     ],
-    author: 'Rick Sanchez',
-    legal: 'USMLE is a registered trademark of the Federation of State Medical Boards (FSMB) of the United States, inc., and the National Board of Medical Examiners (NBME), neither of which sponsors or endorses this product.'
+    author: 'Jeremiah M. Larson, MD',
+    legal: 'USMLE is a registered trademark of the Federation of State Medical Boards (FSMB) of the United States, inc., and the National Board of Medical Examiners (NBME), neither of which sponsors or endorses this product.',
+    brandImage: 'images/kaplan-logo.png'
   },
   {
-    title: 'ICR',
-    subtitle: 'RS: Complex Rick Cases',
+    title: 'USMLE',
+    subtitle: 'Step 3 CS: Complex Cases',
     edition: 'Third',
     tagline: 'Practical, proven advice for navigating the council of Ricks',
     features: [
-      'Detailed profiles of over 1000 Ricks and their accompanying Mortys',
-      'Proven strategies for interacting with a variety of Rick types',
-      'Portal gun histories for the most notorious Rick criminals',
-      'Other super Rick-diculous stuff'
+      'Plenty of detailed charts and explanations',
+      'Step-by-step instructions on how to craft the perfect answer',
+      'Flashcards for memorizing key facts and figures',
+      'Tips for overcoming the toughest questions you may encounter',
+      'Handy reference guide for commonly used vocabulary'
     ],
-    author: 'Salesman Rick',
-    legal: 'Blop boopa doop doop ba noop noop noop'
+    author: 'Morty Smith, MD',
+    legal: 'USMLE is a registered trademark of the Federation of State Medical Boards (FSMB) of the United States, inc., and the National Board of Medical Examiners (NBME), neither of which sponsors or endorses this product.',
+    brandImage: 'images/kaplan-logo.png'
+  },
+  {
+    title: 'USMLE',
+    subtitle: 'Step 4: Even Harder Stuff',
+    edition: 'Ninth',
+    tagline: 'Practical, proven advice for navigating the council of Ricks',
+    features: [
+      'Critical information about important things',
+      'Must-read diagrams covering essential topics',
+      'Real-world examples of actual situations',
+      'Some other things you can\'t even imagine',
+      'And much much more'
+    ],
+    author: 'Frank Chase, MD',
+    legal: 'USMLE is a registered trademark of the Federation of State Medical Boards (FSMB) of the United States, inc., and the National Board of Medical Examiners (NBME), neither of which sponsors or endorses this product.',
+    brandImage: 'images/kaplan-logo.png'
   }
 ];
