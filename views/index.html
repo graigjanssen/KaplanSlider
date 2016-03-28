@@ -3,15 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <!-- Angular Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js" charset="utf-8"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.min.js" charset="utf-8"></script>
-  <script src="js/books.js" charset="utf-8"></script>
-  <script src="js/app.js" charset="utf-8"></script>
+  <!-- Local Scripts -->
+  <script src="/js/app.js" charset="utf-8"></script>
+  <script src="/js/controllers/slider.js" charset="utf-8"></script>
+  <script src="/js/services/booksApi.js" charset="utf-8"></script>
   <title>Kaplan Test Prep - Titles</title>
 </head>
 <body>
-  <div class="container" ng-controller="BooksController">
+  <div class="container" ng-controller="SliderController">
     <div class="book" ng-repeat="book in books">
       <h2>{{book.title}}</h2>
       <h3>{{book.subtitle}}</h3>

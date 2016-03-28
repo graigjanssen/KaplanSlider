@@ -1,0 +1,71 @@
+{
+  "books": [
+    {
+      "title": "USMLE",
+      "subtitle": "Step 2 CS: Complex Cases",
+      "subtitle2": "35 Cases You Are Likely To See on the Exam",
+      "tagline": "Proven, practical tools to help you score higher",
+      "edition": "Second",
+      "author": "Phillip Brottman, MD and Sonia Reichert, MD",
+      "legal": "USMLE is a registered trademark of the Federation of State Medical Boards (FSMB) and the National Board of Medical Examiners (NBME), neither of which sponsors nor endorses this book.",
+      "brandImage": "/images/kaplan-logo.png",
+      "keyPoints": [
+        "Expert advice on how to master the most complex cases you'll see",
+        "Topics include work physicals, healthy check-ups, telephone calls, and end-of-life issues",
+        "In-depth coverage of the initial approach to complex cases and patient note-writing",
+        "BONUS: Tearout flashcard section based upon \"doorway information\""
+      ]
+    },
+    {
+      "title": "USMLE",
+      "subtitle": "Step 2 Clinical Skills",
+      "subtitle2": "",
+      "tagline": "Proven, practical tools to help you score higher",
+      "edition": "Fourth",
+      "author": "",
+      "legal": "USMLE is a registered trademark of the Federation of State Medical Boards (FSMB) and the National Board of Medical Examiners (NBME), neither of which sponsors nor endorses this book.",
+      "brandImage": "/images/kaplan-logo.png",
+      "keyPoints": [
+        "Expert advice on how to master the exam",
+        "Realistic practice scenarios",
+        "Proven strategies for doctor-patient communication and history taking",
+        "Effective tactics for the physical exam",
+        "Exclusive tips for writing the patient note",
+        "35 practice cases with answers and explanations"
+      ]
+    },
+    {
+      "title": "USMLE",
+      "subtitle": "Step 3 CS: More Complex Cases",
+      "subtitle2": "45 Cases You Are Very Likely To See on the Exam",
+      "tagline": "Proven, practical tools to help you score higher",
+      "edition": "Third",
+      "author": "Michael Brattman, MD and Sarah Ripart, MD",
+      "legal": "USMLE is a registered trademark of the Federation of State Medical Boards (FSMB) and the National Board of Medical Examiners (NBME), neither of which sponsors nor endorses this book.",
+      "brandImage": "/images/kaplan-logo.png",
+      "keyPoints": [
+        "Real world scenarios to prepare you for the exam",
+        "Topics include telephone calls, paperwork, patient evaluation and screenings",
+        "In-depth coverage of the many facets of intricate analysis within a context framework",
+        "Helpful diagrams detailing intricate systems involving patient response methods",
+        "Expert analysis on exam pattern recognition and rational approaches to problem solving techniques"
+      ]
+    },
+    {
+      "title": "USMLE",
+      "subtitle": "Step 3: Even More Complex Cases",
+      "subtitle2": "",
+      "tagline": "Proven, practical tools to help you score higher",
+      "edition": "Fifth",
+      "author": "Peter Boatman, MD",
+      "legal": "USMLE is a registered trademark of the Federation of State Medical Boards (FSMB) and the National Board of Medical Examiners (NBME), neither of which sponsors nor endorses this book.",
+      "brandImage": "/images/kaplan-logo.png",
+      "keyPoints": [
+        "Must-read advice on test preparation methodologies and approaches",
+        "Preparation advice and support protocols for topics ranging form telephone calls to fax machines",
+        "In-depth coverage of the initial approach to complex cases and patient note-writing",
+        "BONUS: Tearout flashcard section based upon \"doorway information\""
+      ]
+    }
+  ]
+}
