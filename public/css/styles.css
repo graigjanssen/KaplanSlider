@@ -13,9 +13,21 @@
 .slide {
   position: relative;
   display: inline-block;
-  background-color: rgb(42, 37, 125);
+  background-color: rgb(47, 49, 106);
   border: 2px solid rgb(69, 99, 139);
   height: 480px;
+  z-index: 100;
+}
+.curve {
+  position: absolute;
+  left: 20%;
+  top: -10%;
+  height: 150%;
+  width: 35%;
+  border: 20px groove;
+  border-color: transparent transparent transparent rgb(128, 125, 191);
+  border-radius: 50%;
+  z-index: 50;
 }
 
 /*SMALL SCREEN*/
