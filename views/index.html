@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/css/styles.css">
   <!-- Angular Scripts -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js" charset="utf-8"></script>
@@ -13,8 +14,8 @@
   <script src="/js/services/booksApi.js" charset="utf-8"></script>
   <title>Kaplan Test Prep - Titles</title>
 </head>
-<body>
-  <div class="slider" ng-controller="SliderController">
+<body ng-controller="SliderController">
+  <div class="slider">
     <div class="slide" ng-repeat="book in books">
       <div class="curve"></div>
       <img ng-src="{{book.brandImage}}" alt="Kaplan Medical logo" class="logo">
@@ -34,6 +35,10 @@
       <h4 class="author">{{book.author}}</h4>
       <h6 class="legal">{{book.legal}}</h6>
     </div>
+  </div>
+  <div class="slider-buttons">
+    <button ng-click="toggleSlider($event)" id="play-pause" class="slider-button"><i class="fa fa-play-circle"></i></button>
+    <button ng-click="resetSlider($event)" id="stop" class="slider-button"><i class="fa fa-stop-circle"></i></button>
   </div>
 </body>
 </html>
