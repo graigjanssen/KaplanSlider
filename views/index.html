@@ -18,6 +18,21 @@
     <div class="slide" ng-repeat="book in books">
       <div class="curve"></div>
       <img ng-src="{{book.brandImage}}" alt="Kaplan Medical logo" class="logo">
+      <div class="title-block">
+        <h2 class="title">{{book.title}}<span id="title-trade">&trade;</span></h2>
+        <h3 class="subtitle">{{book.subtitle}}</h3>
+        <h4 class="subtitle-2">{{book.subtitle2}}</h4>
+      </div>
+      <h4 class="tagline">{{book.tagline}}</h4>
+      <h4 class="edition">{{book.edition}} EDITION</h4>
+      <div class="key-points">
+        <div ng-repeat="keyPoint in book.keyPoints" class="key-point">
+          <p class="key-point-text">{{keyPoint}}</p>
+          <hr class="key-point-line">
+        </div>
+      </div>
+      <h4 class="author">{{book.author}}</h4>
+      <h6 class="legal">{{book.legal}}</h6>
     </div>
   </div>
 </body>

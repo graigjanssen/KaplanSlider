@@ -5,34 +5,121 @@
 }
 .slider {
   width: 100%;
-  height: 480px;
+  height: 520px;
   margin-top: 20px;
+  line-height: 100px;
   overflow: hidden;
 }
 .slide {
   position: relative;
   display: inline-block;
   background-color: rgb(41, 47, 128);
-  border: 2px solid rgb(69, 99, 139);
-  height: 480px;
-  z-index: 100;
+  padding-bottom: 50px;
+  margin-bottom: 50px;
+  height: 520px;
+  line-height: normal;
+  z-index: -100;
+  color: white;
+  font-family: sans-serif;
 }
 .curve {
   position: absolute;
-  left: 20%;
-  top: -10%;
-  height: 150%;
-  width: 35%;
+  left: 5%;
+  top: -80px;
+  height: 700px;
+  width: 80%;
   border: 20px groove;
   border-color: transparent transparent transparent rgb(128, 125, 191);
   border-radius: 50%;
-  z-index: 50;
+  z-index: -200;
 }
 .logo {
   position: absolute;
   width: 45%;
-  top: 7.5%;
-  right: 7.5%;
+  top: 2.5%;
+  right: 5%;
+}
+.title-block {
+  position: absolute;
+  text-align: right;
+  top: 10%;
+  right: 5%;
+}
+.title {
+  font-size: 3.6rem;
+}
+#title-trade {
+  position: relative;
+  top: -40px;
+  font-size: .6rem;
+}
+.subtitle {
+  position: relative;
+  top: -10px;
+  right: 10px;
+  font-size: .9rem;
+  color: rgb(175, 210, 73);
+  text-transform: uppercase;
+}
+.subtitle-2 {
+  position: relative;
+  top: -10px;
+  right: 10px;
+  font-size: .5rem;
+  text-transform: uppercase;
+}
+.tagline {
+  position: absolute;
+  top: 32.5%;
+  width: 100%;
+  padding: .3rem 0;
+  text-align: center;
+  background-color: rgb(175, 210, 73);
+  color: rgb(41, 47, 128);
+  font-size: .5rem;
+  text-transform: uppercase;
+  z-index: 100;
+}
+.edition {
+  position: absolute;
+  top: 38.5%;
+  right: 8.5%;
+  font-size: .5rem;
+  text-transform: uppercase;
+}
+.key-points {
+  position: absolute;
+  top: 42.5%;
+  right: 8.5%;
+  width: 40%;
+  font-size: .3rem;
+}
+.key-point-text {
+  line-height: .5rem;
+  padding: 7px 0;
+}
+.key-point-line {
+  border-color: rgb(126, 130, 172);
+}
+.key-point:last-child hr {
+  display: none;
+}
+.author {
+  position: absolute;
+  right: 18%;
+  width: 30%;
+  bottom: 7.5%;
+  font-size: .5rem;
+  color: rgb(175, 210, 73);
+}
+.legal {
+  position: absolute;
+  left: 5%;
+  bottom: 7.5%;
+  width: 40%;
+  font-size: 5px;
+  font-family: serif;
+  color: rgb(200,200,200);
 }
 
 /*SMALL SCREEN*/
