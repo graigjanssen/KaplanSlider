@@ -30,7 +30,11 @@ ctrl.controller('SliderController', ['$scope', '$interval', 'booksApi', function
   };
 
   $scope.resetSlider = function(){
-
+    if (angular.isDefined(play)){
+      $interval.cancel(play);
+      (document.getElementById('play-pause')).className = "fa fa-play-circle";
+    }
+    getBooks();
   };
 
   function getBooks() {
