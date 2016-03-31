@@ -1,11 +1,11 @@
-var ctrl = angular.module('sliderCtrl', []);
+var ctrl = angular.module('sliderCtrl', ['ngAnimate']);
 
-ctrl.controller('SliderController', ['$scope', '$interval', 'booksApi', function($scope, $interval, booksApi){
+ctrl.controller('SliderController', ['$scope', '$interval', '$timeout', 'booksApi', function($scope, $interval, $timeout, booksApi){
   $scope.books = [];
 
   function rotateBooks() {
-      var first = $scope.books.shift();
-      $scope.books.push(first);
+    var first = $scope.books.shift();
+    $scope.books.push(first);
   }
 
   // Variable to store $interval promise object
@@ -16,12 +16,22 @@ ctrl.controller('SliderController', ['$scope', '$interval', 'booksApi', function
     var el = e.target;
     if (el.className === "fa fa-play-circle") {
       el.className = "fa fa-pause-circle";
+      // Using JQuery to obtain all slide elements
+      var $slides = $('.slide');
+      // Generate window-size based number for slide amount
+      var width = parseFloat($slides.css('width'));
+      var margin = parseFloat($slides.css('marginLeft'));
+      var slideAmount = width + (margin * 2);
       play = $interval(function(){
-        rotateBooks();
-      }, 1000);
+        $slides.animate({
+          left: "-=" + slideAmount
+        }, 1000, rotateBooks());
+        $slides.animate({
+          left: "+=" + slideAmount
+        }, 0);
+      }, 1020);
     } else {
       if (angular.isDefined(play)) {
-        console.log('play defined');
         $interval.cancel(play);
         play = undefined;
       }
