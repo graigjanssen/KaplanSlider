@@ -12,10 +12,8 @@ ctrl.controller('SliderController', ['$scope', '$interval', '$timeout', 'booksAp
   var play;
 
   $scope.toggleSlider = function(e){
-    // Toggle button play/pause icon
-    console.log(e);
+    // Toggle button play/pause icon.  This method fixed bug in Firefox
     var el = e.delegateTarget.children[0];
-    console.log(el);
     if (el.className === "fa fa-play-circle") {
       el.className = "fa fa-pause-circle";
       // Using JQuery to obtain all slide elements
@@ -24,16 +22,18 @@ ctrl.controller('SliderController', ['$scope', '$interval', '$timeout', 'booksAp
       var width = parseFloat($slides.css('width'));
       var margin = parseFloat($slides.css('marginLeft'));
       var slideAmount = width + (margin * 2);
+      // Carousel concept is to animate slides left, then simultaneously reorder array and reset animation.  Current result acheives carousel effect but has slight flicker.
       play = $interval(function(){
         $slides.animate({
           left: "-=" + slideAmount
         }, 1000, rotateBooks());
-        // Using $slides.css() does not work
+        // Using $slides.css() does not work as expected
         $slides.animate({
           left: "+=" + slideAmount
         }, 0);
       }, 1000);
     } else {
+      // If pause button clicked, stop intveral
       if (angular.isDefined(play)) {
         $interval.cancel(play);
         play = undefined;
@@ -42,6 +42,7 @@ ctrl.controller('SliderController', ['$scope', '$interval', '$timeout', 'booksAp
     }
   };
 
+  // Stop button
   $scope.resetSlider = function(){
     if (angular.isDefined(play)){
       $interval.cancel(play);
