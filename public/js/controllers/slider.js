@@ -13,7 +13,9 @@ ctrl.controller('SliderController', ['$scope', '$interval', '$timeout', 'booksAp
 
   $scope.toggleSlider = function(e){
     // Toggle button play/pause icon
-    var el = e.target;
+    console.log(e);
+    var el = e.delegateTarget.children[0];
+    console.log(el);
     if (el.className === "fa fa-play-circle") {
       el.className = "fa fa-pause-circle";
       // Using JQuery to obtain all slide elements
@@ -26,10 +28,11 @@ ctrl.controller('SliderController', ['$scope', '$interval', '$timeout', 'booksAp
         $slides.animate({
           left: "-=" + slideAmount
         }, 1000, rotateBooks());
+        // Using $slides.css() does not work
         $slides.animate({
           left: "+=" + slideAmount
         }, 0);
-      }, 1020);
+      }, 1000);
     } else {
       if (angular.isDefined(play)) {
         $interval.cancel(play);
